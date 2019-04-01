@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="0.25" alignment="left" text="App Loaded..." textAlignment="center" id="8x8-5i-bb4"/>
+                        <button width="1" alignment="left" title="Button" id="VrO-Ya-p3c">
+                            <connections>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="Lzl-s5-ZpD"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="displayLabel" destination="8x8-5i-bb4" id="V6N-Nm-hvX"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
